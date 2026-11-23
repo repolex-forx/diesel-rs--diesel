@@ -1,0 +1,15 @@
+[2026-11-23T03:52:16Z] === ENRICH ITERATION 1 START | repo=diesel-rs/diesel sha=07a80d4e ===
+[2026-11-23T03:52:16Z] [iter=1] PHASE START: enrich repo=diesel-rs/diesel sha=07a80d4e runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/07a80d4e-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/07a80d4e9f32d62bec3d425d85c1ef5b8cddc80d.nq.gz
+[2026-11-23T03:52:16Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=77 MB
+[2026-11-23T03:53:18Z] [iter=1] AST store loaded triples=4797647 load_secs=61 mem_mb=901 MB
+[2026-11-23T03:53:18Z] [iter=1] Step 2: Finding LSP targets mem_mb=901 MB
+[2026-11-23T03:53:24Z] [iter=1] LSP targets found call_sites=37356 imports=2281 extends=1 implements=1736 secs=6
+[2026-11-23T03:53:28Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=901 MB
+[2026-11-23T03:53:46Z] [iter=1] Position index built positions=335740 nodes_with_types=398065 secs=18 mem_mb=944 MB
+[2026-11-23T03:53:46Z] [iter=1] Step 3: Starting LSP resolution mem_mb=944 MB already_completed_types=[] already_completed_files=0
+[2026-11-23T03:53:46Z] [iter=1] Resolving target type target_type=call_site count=37356
+[2026-11-23T03:53:46Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=1.5 files_done=0 resolved=0 errors=0 current=diesel_cli/tests/migration_revert.rs
+[2026-11-23T03:53:51Z] [iter=1] CHECKPOINT TRIGGERED elapsed_min=1.6 files_completed=500 new_files_this_iter=500 mem_mb=1006 MB
+[2026-11-23T03:53:51Z] [iter=1] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/07a80d4e9f32d62bec3d425d85c1ef5b8cddc80d.nq.gz triples=43113
+[2026-11-23T03:53:51Z] [iter=1] Checkpoint written, exiting with code 7
+[2026-11-23T03:53:51Z] [iter=1] PHASE END: enrich (checkpointed) elapsed_s=95 elapsed_min=1.6 files_completed=500
